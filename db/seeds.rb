@@ -10,14 +10,14 @@ require 'crypto'
 ## First tanent seed
 
 tenant = Tenant.new
-tenant.name = 'Localhost Tenant'
-tenant.host = 'localhost'
+tenant.name = 'IUS'
+tenant.host = 'ius'
 tenant.active = true
 tenant.save!
 
 tenant = Tenant.new
-tenant.name = 'ACME Tenant'
-tenant.host = 'acme'
+tenant.name = 'Zaharije Pasalic'
+tenant.host = 'zaharije'
 tenant.active = true
 tenant.save!
 

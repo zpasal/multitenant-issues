@@ -10,19 +10,14 @@ Sarajevo 'Ruby Meetup' http://www.meetup.com/ruby/Sarajevo-BA/901742/.
 * rake db:migrate
 * rake db:seed
 * rails s
+* edit /etc/hosts file to add 2 tenants:
 
+127.0.0.1   ius.acme.com
+127.0.0.1   zaharije.acme.com
 
-There are 2 tenants seeded (db/seed.rb)
-
-* localhost
-* acme
-
-To be able to work with acme tanent, add to your /etc/hosts file entry
-
-127.0.0.1   acme
-
+Those tenants are seeded (db/seed.rb).
 
 tenants can be accessed via:
 
-* localhost:3000
-* acme:3000
+* ius.acme.com:3000
+* zaharije.acme.com:3000
