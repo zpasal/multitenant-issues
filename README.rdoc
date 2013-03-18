@@ -3,9 +3,7 @@
 This is sample project for simple multi-tenant architecture presented on 
 Sarajevo 'Ruby Meetup' http://www.meetup.com/ruby/Sarajevo-BA/901742/. 
 
-Rails is a web-application framework that includes everything needed t
-
-== Create
+== How to start
 
 1. Clone repository
 2. bundle install
