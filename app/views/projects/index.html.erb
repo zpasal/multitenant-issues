@@ -1,0 +1,24 @@
+<h2>My Projects</h2>
+
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th>Issue count</th>
+    <th>Actions</th>
+  </tr>
+<% @projects.each do |project| %>
+  <tr>
+    <td><%= link_to project.name, project_path(project) %></td>
+    <td><%= project.issues.count %></td>
+    <td>
+      <%= link_to 'Show', project %> | 
+      <%= link_to 'Edit', edit_project_path(project) %> |
+      <%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %>
+    </td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Project', new_project_path %>

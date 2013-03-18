@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<span class="bread"><%= link_to 'Projects', projects_path%> &gt; <span><%= @project.name %></span></span>
+<br/><br/>
+
+
+<table>
+	<tr>
+		<td>#</td>
+		<td>Name</td>
+		<td>Status</td>
+	</tr>
+	<% @project.issues.each do |issue| %>
+		<tr>
+			<td><%=issue.id%></td>
+			<td><%=link_to issue.name, issue_path(issue)%></td>
+			<td><%=issue.status%></td>
+		</tr>
+	<% end %>
+</table>
+<br/>
+<%= link_to 'New Issue', new_issue_path({:project_id => params[:id]}) %>
+<%= link_to 'Back', projects_path %>
+
