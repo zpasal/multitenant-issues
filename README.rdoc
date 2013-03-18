@@ -5,27 +5,24 @@ Sarajevo 'Ruby Meetup' http://www.meetup.com/ruby/Sarajevo-BA/901742/.
 
 == How to start
 
-1. Clone repository
-2. bundle install
-3. rake db:migrate
-4. rake db:seed
-5. rails s
+* Clone repository
+* bundle install
+* rake db:migrate
+* rake db:seed
+* rails s
 
 
 There are 2 tenants seeded (db/seed.rb)
 
-- localhost
-- acme
+* localhost
+* acme
 
-To be able to work with acme startup add to your hosts file entri
+To be able to work with acme tanent, add to your /etc/hosts file entry
 
 127.0.0.1   acme
 
 
 tenants can be accessed via:
 
-localhost:3000
-
-and
-
-acme:3000
+* localhost:3000
+* acme:3000
