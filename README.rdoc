@@ -15,9 +15,9 @@ Sarajevo 'Ruby Meetup' http://www.meetup.com/ruby/Sarajevo-BA/901742/.
 127.0.0.1   ius.acme.com
 127.0.0.1   zaharije.acme.com
 
-Those tenants are seeded (db/seed.rb).
+Those tenants are seeded in (db/seed.rb).
 
-tenants can be accessed via:
+Tenants can be accessed via:
 
 * ius.acme.com:3000
 * zaharije.acme.com:3000
